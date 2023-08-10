@@ -26,7 +26,10 @@ public class Institution : MonoBehaviour
     public int controlPoints;
     public int maxControlPoints;
     public Image controlImage;
+    
     public bool WinConMet;
+    public bool UsesPopularity;
+    public bool PlayerInCharge;
 
     //Change the control points by control_change, update the control bar to that fraction. 
     public void ChangeControl(int control_change) 

@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public int turnNumber;
     public Institution WinCon1;
     public TextMeshProUGUI turnText;
+    public string SceneToLoad;
 
     //Checks if the gamestate meets the current win condition
     public bool CheckWinCondition()
@@ -29,6 +30,11 @@ public class GameManager : MonoBehaviour
                     
                     
                 }
+
+            case (2): 
+                {
+                    return WinCon1.PlayerInCharge;
+                }
             default: return false;
         }
     }
@@ -41,7 +47,7 @@ public class GameManager : MonoBehaviour
         if (CheckWinCondition())
         {
             
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(SceneToLoad);
             
         }
     }
