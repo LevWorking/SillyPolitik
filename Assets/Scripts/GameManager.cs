@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
                 {
                     return WinCon1.PlayerInCharge;
                 }
+
             default: return false;
         }
     }
