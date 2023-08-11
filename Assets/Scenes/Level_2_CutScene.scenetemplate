@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13966, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: Level_2_CutScene
+  m_EditorClassIdentifier: 
+  templateScene: {fileID: 102900000, guid: a17472287f3a0644784a5545eb10d867, type: 3}
+  templateName: 
+  description: 
+  preview: {fileID: 0}
+  dependencies:
+  - dependency: {fileID: 11400000, guid: 9c8be756a9bd0ee47b3a94b62e308ad8, type: 2}
+    instantiationMode: 1
+  - dependency: {fileID: 2800000, guid: ade0e6b952fb24246b9836b7d64a7877, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 12924c0887d6c4f448c2a3186eb8698b, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: ee148e281f3c41c5b4ff5f8a5afe5a6c, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 2800000, guid: 2fd6421f253b4ef1a19526541f9ffc0c, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 12800000, guid: 19ecc02e45f4ad342b21a7abaa49d973, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 2800000, guid: 9a23fd7ad4f48904a96261aefe95e532, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 92d68e6ab713e3a44927f218c4a2aad3, type: 3}
+    instantiationMode: 0
+  templatePipeline: {fileID: 0}
+  badge: {fileID: 0}
+  addToDefaults: 0

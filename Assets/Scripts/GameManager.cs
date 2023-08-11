@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI turnText;
     public string SceneToLoad;
 
+    public bool isCutScene;
+
     //Checks if the gamestate meets the current win condition
     public bool CheckWinCondition()
     {
@@ -51,5 +53,14 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(SceneToLoad);
             
         }
+    }
+
+    public void CutSceneComplete() 
+    {
+        if (isCutScene) 
+        {
+            SceneManager.LoadScene(SceneToLoad);
+        }
+    
     }
 }
