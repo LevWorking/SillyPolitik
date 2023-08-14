@@ -1634,6 +1634,7 @@ MonoBehaviour:
   WinCon1: {fileID: 8149053135620697072}
   turnText: {fileID: 1427324706}
   SceneToLoad: Main_Menu
+  isCutScene: 0
 --- !u!114 &1460263478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2031,6 +2032,7 @@ GameObject:
   - component: {fileID: 1748125758}
   - component: {fileID: 1748125760}
   - component: {fileID: 1748125759}
+  - component: {fileID: 1748125761}
   m_Layer: 5
   m_Name: grand_lord_image
   m_TagString: Untagged
@@ -2078,7 +2080,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6e4a1f97dfa59d546aa4fca1e51b7e32, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f4cd96ed1ec246f48b2065f7903c58d6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2096,6 +2098,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748125757}
   m_CullTransparentMesh: 1
+--- !u!114 &1748125761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748125757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30c6a589f9ad95f4a95e2fd4fc81a3e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetImage: {fileID: 1748125759}
+  image1: {fileID: 21300000, guid: f4cd96ed1ec246f48b2065f7903c58d6, type: 3}
+  image2: {fileID: 21300000, guid: e76cd24dee610e5488c5947c2bd654e8, type: 3}
+  switching_is_active: 1
+  switching_period: 0.3
 --- !u!1 &1770537912
 GameObject:
   m_ObjectHideFlags: 0
@@ -2359,6 +2378,12 @@ MonoBehaviour:
   - 'Beautiful work! With the mayor being unpopular, we can run for election and
     win! '
   textSpeed: 0.07
+  TalkingTarget1: {fileID: 0}
+  TalkingTarget2: {fileID: 0}
+  isConversation: 0
+  color1: {r: 0, g: 0, b: 0, a: 0}
+  color2: {r: 0, g: 0, b: 0, a: 0}
+  gameManager: {fileID: 1460263477}
 --- !u!114 &2054324455
 MonoBehaviour:
   m_ObjectHideFlags: 0

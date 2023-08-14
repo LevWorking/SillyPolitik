@@ -1200,7 +1200,8 @@ MonoBehaviour:
   turnNumber: 1
   WinCon1: {fileID: 8149053135620697072}
   turnText: {fileID: 1427324706}
-  SceneToLoad: Level_1
+  SceneToLoad: Level_2_CutScene
+  isCutScene: 0
 --- !u!1 &1490930801
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,6 +1677,11 @@ MonoBehaviour:
   - Click the Control button at the bottom of the HOA panel. Fill it up to the max.
   - 'Nice job! Now the cronies are working for us! '
   textSpeed: 0.07
+  TalkingTarget: {fileID: 0}
+  isConversation: 0
+  color1: {r: 0, g: 0, b: 0, a: 0}
+  color2: {r: 0, g: 0, b: 0, a: 0}
+  gameManager: {fileID: 0}
 --- !u!114 &2054324455
 MonoBehaviour:
   m_ObjectHideFlags: 0

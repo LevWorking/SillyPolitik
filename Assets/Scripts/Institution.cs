@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using TMPro;
 
 public enum InstitutionType
 { 
@@ -42,6 +43,8 @@ public class Institution : MonoBehaviour
     public bool UsesPopularity;
     public bool PlayerInCharge;
 
+    public resources Institution_Resource;
+    
     //Sets the control bar to the predetermined value.
     void Awake()
     {
