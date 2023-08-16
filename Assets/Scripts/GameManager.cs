@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
+using static Institution;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class GameManager : MonoBehaviour
     public string SceneToLoad;
 
     public bool isCutScene;
+    public List<Institution> orgInstances = new List<Institution>();
 
     //Checks if the gamestate meets the current win condition
     public bool CheckWinCondition()
@@ -42,10 +44,22 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Start() 
+    {
+        Institution[] scripts = FindObjectsOfType<Institution>();
+        orgInstances.AddRange(scripts);
+    }
+
     public void EndTurn() 
     {
         turnNumber += 1;
         turnText.text = "Turn " + turnNumber.ToString();
+
+        foreach (Institution script in orgInstances)
+        {
+            
+            script.UpdateResources(true);
+        }
 
         if (CheckWinCondition())
         {

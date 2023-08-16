@@ -43,7 +43,16 @@ public class Institution : MonoBehaviour
     public bool UsesPopularity;
     public bool PlayerInCharge;
 
-    public resources Institution_Resource;
+
+    //Variables for resources
+    public int funds;
+    public int dirt;
+    public int fundsIncome;
+    public int dirtIncome;
+    public int force;
+    public int forceIncome;
+
+    public TextMeshProUGUI resourceText;
     
     //Sets the control bar to the predetermined value.
     void Awake()
@@ -54,6 +63,7 @@ public class Institution : MonoBehaviour
     void Start()
     {
         imageComponent = buttonToChange.GetComponentInParent<Image>();
+        UpdateResources(false);
     }
 
 
@@ -66,6 +76,23 @@ public class Institution : MonoBehaviour
 
     }
 
+    //Update the resource text. takeIncome controls if resources go up as though it were the end of the turn.
+    public void UpdateResources(bool takeIncome) 
+    {
+        if (takeIncome)
+        {
+            dirt += dirtIncome;
+            funds += fundsIncome;
+            force += forceIncome;
+        }
+
+        if (resourceText != null)
+        {
+            resourceText.text = string.Format("Dirt: {0} ({1}{2})", dirt, dirtIncome < 0 ? "" : "+", dirtIncome);
+            resourceText.text += string.Format("<br>Funds: {0} ({1}{2})", funds, fundsIncome < 0 ? "" : "+", fundsIncome);
+            resourceText.text += string.Format("<br>Force: {0} ({1}{2})", force, forceIncome < 0 ? "" : "+", forceIncome);
+        }
+    }
 
     /*Availible if the Institution has the Spread Misery Power.
      Causes a reduction in control points. */
