@@ -307,8 +307,9 @@ MonoBehaviour:
   turnNumber: 0
   WinCon1: {fileID: 0}
   turnText: {fileID: 0}
-  SceneToLoad: Main_Menu
+  SceneToLoad: Level_2
   isCutScene: 1
+  orgInstances: []
 --- !u!4 &759315590
 Transform:
   m_ObjectHideFlags: 0

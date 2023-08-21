@@ -923,7 +923,7 @@ RectTransform:
   m_GameObject: {fileID: 565321344}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 8.951049, z: 1}
+  m_LocalScale: {x: 1, y: 3.6924865, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1427324705}
@@ -1477,7 +1477,7 @@ RectTransform:
   m_GameObject: {fileID: 1427324704}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 2.3125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 565321345}
@@ -1485,7 +1485,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0.000025852}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1427324706
@@ -1633,8 +1633,9 @@ MonoBehaviour:
   turnNumber: 1
   WinCon1: {fileID: 8149053135620697072}
   turnText: {fileID: 1427324706}
-  SceneToLoad: Main_Menu
+  SceneToLoad: Level_2_CutScene
   isCutScene: 0
+  orgInstances: []
 --- !u!114 &1460263478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4308,6 +4309,13 @@ MonoBehaviour:
   WinConMet: 0
   UsesPopularity: 1
   PlayerInCharge: 0
+  funds: 0
+  dirt: 0
+  fundsIncome: 0
+  dirtIncome: 0
+  force: 0
+  forceIncome: 0
+  resourceText: {fileID: 0}
 --- !u!222 &6826044783734134392
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6013,6 +6021,13 @@ MonoBehaviour:
   WinConMet: 0
   UsesPopularity: 0
   PlayerInCharge: 1
+  funds: 0
+  dirt: 0
+  fundsIncome: 0
+  dirtIncome: 0
+  force: 0
+  forceIncome: 0
+  resourceText: {fileID: 0}
 --- !u!114 &8149053135620697075
 MonoBehaviour:
   m_ObjectHideFlags: 0
